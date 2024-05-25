@@ -1,0 +1,12 @@
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApplication.Models\bin\Debug\net8.0\SampleApplication.Models.deps.json
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApplication.Models\bin\Debug\net8.0\SampleApplication.Models.dll
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApplication.Models\bin\Debug\net8.0\SampleApplication.Models.pdb
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApplication.Models\obj\Debug\net8.0\SampleApplication.Models.csproj.AssemblyReference.cache
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApplication.Models\obj\Debug\net8.0\SampleApplication.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApplication.Models\obj\Debug\net8.0\SampleApplication.Models.AssemblyInfoInputs.cache
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApplication.Models\obj\Debug\net8.0\SampleApplication.Models.AssemblyInfo.cs
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApplication.Models\obj\Debug\net8.0\SampleApplication.Models.csproj.CoreCompileInputs.cache
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApplication.Models\obj\Debug\net8.0\SampleApplication.Models.dll
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApplication.Models\obj\Debug\net8.0\refint\SampleApplication.Models.dll
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApplication.Models\obj\Debug\net8.0\SampleApplication.Models.pdb
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApplication.Models\obj\Debug\net8.0\ref\SampleApplication.Models.dll

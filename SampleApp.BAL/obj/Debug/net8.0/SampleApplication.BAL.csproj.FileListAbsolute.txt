@@ -1,0 +1,17 @@
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApp.BAL\bin\Debug\net8.0\SampleApplication.BAL.deps.json
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApp.BAL\bin\Debug\net8.0\SampleApplication.BAL.dll
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApp.BAL\bin\Debug\net8.0\SampleApplication.BAL.pdb
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApp.BAL\bin\Debug\net8.0\SampleApplication.DAL.dll
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApp.BAL\bin\Debug\net8.0\SampleApplication.Models.dll
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApp.BAL\bin\Debug\net8.0\SampleApplication.DAL.pdb
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApp.BAL\bin\Debug\net8.0\SampleApplication.Models.pdb
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApp.BAL\obj\Debug\net8.0\SampleApplication.BAL.csproj.AssemblyReference.cache
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApp.BAL\obj\Debug\net8.0\SampleApplication.BAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApp.BAL\obj\Debug\net8.0\SampleApplication.BAL.AssemblyInfoInputs.cache
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApp.BAL\obj\Debug\net8.0\SampleApplication.BAL.AssemblyInfo.cs
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApp.BAL\obj\Debug\net8.0\SampleApplication.BAL.csproj.CoreCompileInputs.cache
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApp.BAL\obj\Debug\net8.0\SampleAp.72F90716.Up2Date
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApp.BAL\obj\Debug\net8.0\SampleApplication.BAL.dll
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApp.BAL\obj\Debug\net8.0\refint\SampleApplication.BAL.dll
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApp.BAL\obj\Debug\net8.0\SampleApplication.BAL.pdb
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApp.BAL\obj\Debug\net8.0\ref\SampleApplication.BAL.dll

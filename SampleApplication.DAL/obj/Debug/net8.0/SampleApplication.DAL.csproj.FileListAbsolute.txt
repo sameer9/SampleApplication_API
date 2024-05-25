@@ -1,0 +1,15 @@
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApplication.DAL\bin\Debug\net8.0\SampleApplication.DAL.deps.json
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApplication.DAL\bin\Debug\net8.0\SampleApplication.DAL.dll
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApplication.DAL\bin\Debug\net8.0\SampleApplication.DAL.pdb
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApplication.DAL\bin\Debug\net8.0\SampleApplication.Models.dll
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApplication.DAL\bin\Debug\net8.0\SampleApplication.Models.pdb
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApplication.DAL\obj\Debug\net8.0\SampleApplication.DAL.csproj.AssemblyReference.cache
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApplication.DAL\obj\Debug\net8.0\SampleApplication.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApplication.DAL\obj\Debug\net8.0\SampleApplication.DAL.AssemblyInfoInputs.cache
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApplication.DAL\obj\Debug\net8.0\SampleApplication.DAL.AssemblyInfo.cs
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApplication.DAL\obj\Debug\net8.0\SampleApplication.DAL.csproj.CoreCompileInputs.cache
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApplication.DAL\obj\Debug\net8.0\SampleAp.926F8AE4.Up2Date
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApplication.DAL\obj\Debug\net8.0\SampleApplication.DAL.dll
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApplication.DAL\obj\Debug\net8.0\refint\SampleApplication.DAL.dll
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApplication.DAL\obj\Debug\net8.0\SampleApplication.DAL.pdb
+D:\Sample_Project\SampleApplication_API\SampleApplication_API\SampleApplication.DAL\obj\Debug\net8.0\ref\SampleApplication.DAL.dll
