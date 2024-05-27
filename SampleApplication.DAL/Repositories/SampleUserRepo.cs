@@ -42,8 +42,7 @@ namespace SampleApplication.DAL.Repositories
             //parameters.Add("@EmpAddress", user.Address, DbType.String, ParameterDirection.Input);
 
             SampleUser users;
-            try
-            {
+   
                 using (SqlConnection con = new SqlConnection(_connectionString))
                 {
                     using (DbConnection conn = con)
@@ -62,15 +61,6 @@ namespace SampleApplication.DAL.Repositories
            
                 }
 
-            }
-            catch (Exception ex) {
-
-                _apiResponse.Errors.Add(ex.Message);
-                _apiResponse.Status = false;
-                _apiResponse.StatusCode = HttpStatusCode.InternalServerError;
-                return _apiResponse;
-
-            }
 
         }
 
@@ -81,8 +71,6 @@ namespace SampleApplication.DAL.Repositories
 
             parameters.Add("@UserId", UserId, DbType.Int32, ParameterDirection.Input);
 
-            try
-            {
                 using (SqlConnection con = new SqlConnection(_connectionString))
                 {
                     con.Open();
@@ -102,15 +90,8 @@ namespace SampleApplication.DAL.Repositories
                     }
                     return apiResponse;
                 }
-            }
-            catch (Exception ex)
-            {
-                ApiResponse apiResponse = new();
-                apiResponse.Errors.Add(ex.Message);
-                apiResponse.Status = false;
-                apiResponse.StatusCode = HttpStatusCode.InternalServerError;
-                return apiResponse;
-            }
+            
+
         }
 
 
@@ -121,8 +102,7 @@ namespace SampleApplication.DAL.Repositories
 
             // Task<IEnumerable<Employee>> result;
             IList<SampleUser> result = [];
-            try
-            {
+
                 using (SqlConnection con = new SqlConnection(_connectionString))
                 {
                     using (DbConnection conn = con)
@@ -137,16 +117,7 @@ namespace SampleApplication.DAL.Repositories
                     _apiResponse.StatusCode = HttpStatusCode.OK;
                     return _apiResponse;
                 }
-            }
 
-            catch (Exception ex)
-            {
-                _apiResponse.Errors.Add(ex.Message);
-                _apiResponse.Status = false;
-                _apiResponse.StatusCode = HttpStatusCode.InternalServerError;
-                return _apiResponse;
-
-            }
 
         }
 
@@ -158,8 +129,6 @@ namespace SampleApplication.DAL.Repositories
 
             parameters.Add("@UserId", UserId, DbType.Int32, ParameterDirection.Input);
 
-            try
-            {
                 using (SqlConnection con = new SqlConnection(_connectionString))
                 {
                     con.Open();
@@ -180,15 +149,7 @@ namespace SampleApplication.DAL.Repositories
                     }
                     return apiResponse;
                 }
-            }
-            catch (Exception ex)
-            {
-                ApiResponse apiResponse = new();
-                apiResponse.Errors.Add(ex.Message);
-                apiResponse.Status = false;
-                apiResponse.StatusCode = HttpStatusCode.InternalServerError;
-                return apiResponse;
-            }
+
         }
 
         public LoginResponse LoginSampleUser(LoginPost login)
@@ -226,8 +187,8 @@ namespace SampleApplication.DAL.Repositories
             parameters.Add("@IsSuperUser", user.IsSuperUser, DbType.Boolean, ParameterDirection.Input);
             // Add other parameters as needed
           
-            try
-            {
+            //try
+            //{
                 using (SqlConnection con = new SqlConnection(_connectionString))
                 {
                     con.Open();
@@ -247,15 +208,15 @@ namespace SampleApplication.DAL.Repositories
                     }
                     return apiResponse;
                 }
-            }
-            catch (Exception ex)
-            {
-                ApiResponse apiResponse = new();
-                apiResponse.Errors.Add(ex.Message);
-                apiResponse.Status = false;
-                apiResponse.StatusCode = HttpStatusCode.InternalServerError;
-                return apiResponse;
-            }
+            //}
+            //catch (Exception ex)
+            //{
+            //    ApiResponse apiResponse = new();
+            //    apiResponse.Errors.Add(ex.Message);
+            //    apiResponse.Status = false;
+            //    apiResponse.StatusCode = HttpStatusCode.InternalServerError;
+            //    return apiResponse;
+            //}
         }
     }
 }

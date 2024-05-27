@@ -86,50 +86,44 @@ namespace SampleApplication.API.Controllers
 
 
 
-
-
-
         [HttpPost]
         [Route("UserLogin")]
-        [Route("Login")]
         [AllowAnonymous]
-        
-        public IActionResult Login([FromBody]  LoginPost model)
+        public IActionResult Login([FromBody] LoginPost model)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest("Please enter UserName and Password");
             }
-            // LoginResponseDTO response = new() { Username = model.Username };
 
             var response = _sampleUserService.LoginSampleUser(model);
 
-            if (response.UserMasterId > 0 && model.EmailId != null)
+            if (response.UserMasterId > 0 && !string.IsNullOrEmpty(model.EmailId))
             {
-                var key = Encoding.ASCII.GetBytes(_configuration.GetValue<string>("JWTSecretKey"));
+                var key = Encoding.ASCII.GetBytes(_configuration["JWT:JWTSecretKey"]);
                 var tokenHandler = new JwtSecurityTokenHandler();
-                var tokenDescriptor = new SecurityTokenDescriptor()
+                var tokenDescriptor = new SecurityTokenDescriptor
                 {
-                    Subject = new ClaimsIdentity(new Claim[]
-                                        {
-                                            new Claim(ClaimTypes.Name, model.EmailId),
-                                            //Role
-                                             new Claim(ClaimTypes.Role, "Admin" )
-
-                                        }),
-                    Expires = DateTime.Now.AddHours(24),
-                    SigningCredentials = new(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha512Signature)
-
+                    Subject = new ClaimsIdentity(new[]
+                    {
+                    new Claim(ClaimTypes.Name, model.EmailId),
+                    new Claim(ClaimTypes.Role, "Admin")
+                }),
+                    Expires = DateTime.Now.AddMinutes(Convert.ToDouble(_configuration["JWT:tokenValidityInMinutes"])),
+                    SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha512Signature),
+                    Audience = _configuration["JWT:ValidAudience"],
+                    Issuer = _configuration["JWT:ValidIssuer"]
                 };
 
                 var token = tokenHandler.CreateToken(tokenDescriptor);
                 response.Token = tokenHandler.WriteToken(token);
+                response.TokenExpiration = DateTime.Now.AddMinutes(Convert.ToDouble(_configuration["JWT:tokenValidityInMinutes"]));
+                return Ok(response);
             }
             else
             {
-                return Ok("Invalid UserName or Password");
+                return BadRequest("Invalid UserName or Password");
             }
-            return Ok(response);
         }
 
 
