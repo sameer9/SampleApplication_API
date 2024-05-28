@@ -14,7 +14,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//builder.Services.AddExceptionHandler<ApplicationExceptionHandler>();
+builder.Services.AddExceptionHandler<ApplicationExceptionHandler>();
 
 builder.Services.AddCors(p => p.AddPolicy("corsappsetting", builder =>
 {
@@ -36,7 +36,11 @@ if (app.Environment.IsDevelopment())
 }
 
 //app.UseExceptionHandler(_ => { });
-app.UseMiddleware<CustomExceptionHandlerMiddleware>(new ApplicationExceptionHandler());
+//app.UseMiddleware<CustomExceptionHandlerMiddleware>(new ApplicationExceptionHandler());
+
+app.UseStatusCodePages();
+app.UseExceptionHandler(opt => { });
+//app.UseMiddleware<CustomExceptionHandlerMiddleware>();
 
 app.UseHttpsRedirection();
 app.UseCors(builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());

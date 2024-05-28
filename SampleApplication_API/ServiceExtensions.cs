@@ -11,7 +11,7 @@ namespace SampleApplication.API
             //Register Repos
             var connectionString = configuration["ConnectionStrings:sampleAppConnectionString"];
             collection.AddTransient<ISampleUserService, SampleUserService>();
-            collection.AddTransient<ISampleUserRepo>(s => new SampleUserRepo(connectionString));
+            collection.AddTransient<ISampleUserRepo>(s => new SampleUserRepo(connectionString)).AddProblemDetails();
 
 
 

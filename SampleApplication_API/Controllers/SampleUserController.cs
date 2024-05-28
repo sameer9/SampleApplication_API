@@ -91,6 +91,7 @@ namespace SampleApplication.API.Controllers
         [AllowAnonymous]
         public IActionResult Login([FromBody] LoginPost model)
         {
+            //throw new System.IndexOutOfRangeException();
             if (!ModelState.IsValid)
             {
                 return BadRequest("Please enter UserName and Password");
@@ -98,8 +99,8 @@ namespace SampleApplication.API.Controllers
 
             var response = _sampleUserService.LoginSampleUser(model);
 
-            if (response.UserMasterId > 0 && !string.IsNullOrEmpty(model.EmailId))
-            {
+            //if (response.UserMasterId > 0 && !string.IsNullOrEmpty(model.EmailId))
+            //{
                 var key = Encoding.ASCII.GetBytes(_configuration["JWT:JWTSecretKey"]);
                 var tokenHandler = new JwtSecurityTokenHandler();
                 var tokenDescriptor = new SecurityTokenDescriptor
@@ -119,11 +120,11 @@ namespace SampleApplication.API.Controllers
                 response.Token = tokenHandler.WriteToken(token);
                 response.TokenExpiration = DateTime.Now.AddMinutes(Convert.ToDouble(_configuration["JWT:tokenValidityInMinutes"]));
                 return Ok(response);
-            }
-            else
-            {
-                return BadRequest("Invalid UserName or Password");
-            }
+            //}
+            //else
+            //{
+            //    return BadRequest("Invalid UserName or Password");
+            //}
         }
 
 
